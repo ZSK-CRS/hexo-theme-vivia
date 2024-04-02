@@ -37,3 +37,99 @@
 #   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
 #   guest_info: nick,mail,link #valine comment header info
 
+# Header
+menu:                      # Links in the navigation bar
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+
+home:
+  style: default           # default, detail
+
+
+favicon:                   # Path to the custom favicon relative to /source (e.g. "/favicon.png" if your favicon file is located at /source/favicon.png)
+previewMode: true          # 调色板，默认开启。配置完毕可以手动关闭。color setting palatte, you can turn it off after you have chosen a favoriable color hue
+hue: 270                   # 调色的值[1, 360]，手动调到合适的值可以在这里设置为默认颜色。请不要设置为0，不然会出现奇怪的bug。The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
+
+# Banner
+banner:
+  enable: true             # Display banner
+  url: /images/banner.jpg  # 背景图，根目录是本项目的 source/ 文件夹
+  position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
+  onAllPages: true         # Display banner on all pages
+
+# Personal info
+avatar: /images/avatar.jpg
+author: ZSK
+subtitle: This is the subtitle
+links:
+  - name: Twitter
+    icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
+    url: https://twitter.com
+  - name: Steam
+    icon: fa-brands fa-steam
+    url: https://store.steampowered.com
+  - name: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com
+
+# Sidebar
+sidebar:
+  widgets:                 # Plugins to be enabled (profile, category, tag, archive, recent_posts)
+    normal:                # Scroll along with the page
+      - profile
+    sticky:                # Stick to the top of the page
+      - toc
+      - category
+      - tag
+      - archive
+      - recent_posts
+
+# Sidebar Widget behavior
+archive_type: 'monthly'
+recent_posts_limits: 5
+categories:
+  max_depth: 2             # Maximum depth of categories displayed in the widget (null for unlimited)
+
+
+# Math
+math:                        # 应该没有人想要同时启用两种渲染方式吧？
+  katex:
+    enable: true             # KaTex 性能优秀，建议使用 Katex
+    copytex: true            # 启用后复制 Katex 元素会复制 Tex 代码而非显示的文本
+    mhchem: false            # 启用后可以不受 LaTeX 的语法束缚，用最简明的代码写出规范的化学方程式
+  mathjax:
+    enable: false            # MathJax 性能较差，不建议启用
+
+comment:
+  valine:
+    enable: false         # Enable Valine comment system
+    appId: 
+    appKey: 
+    placeholder: Just go go
+    pageSize: 10
+    highlight: true
+    serverURLs: 
+    # Other supported parameters can be added here if needed
+    # Visit https://valine.js.org/configuration.html for more details
+  twikoo:
+    enable: false          # Enable Twikoo comment system
+    envID:
+    region:
+    path: location.pathname
+    lang:
+    # See also: https://github.com/imaegoo/twikoo
+  waline:
+    enable: false          # Enable Waline comment system
+    serverURL: 
+
+#Analytics
+gauges_analytics: false
+google_analytics: false #UA-xxxxxx
+baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards
+
+
+#Copyright
+copyright: #<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris"></a>
+
