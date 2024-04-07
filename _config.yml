@@ -64,15 +64,15 @@ avatar: /images/avatar.jpg
 author: ZSK
 subtitle: Hakuna Matata
 links:
-  - name: Twitter
-    icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
-    url: https://twitter.com
-  - name: Steam
-    icon: fa-brands fa-steam
-    url: https://store.steampowered.com
   - name: GitHub
     icon: fa-brands fa-github
     url: https://github.com
+  - name: 码云
+    icon: fa-brands fa-google
+    url: https://gitee.com/?from=blog
+  - name: 微信文件
+    icon: fa-brands fa-weixin      # Find icon codes at https://fontawesome.com/search
+    url: https://szfilehelper.weixin.qq.com/
 
 # Sidebar
 sidebar:
