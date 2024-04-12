@@ -102,6 +102,13 @@ math:                        # 应该没有人想要同时启用两种渲染方�
   mathjax:
     enable: false            # MathJax 性能较差，不建议启用
 
+# Algolia search
+algolia_search:
+  enable: true
+  hits:
+    per_page: 6
+
+
 comment:
   valine:
     enable: false         # Enable Valine comment system
