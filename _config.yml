@@ -103,10 +103,14 @@ math:                        # 应该没有人想要同时启用两种渲染方�
     enable: false            # MathJax 性能较差，不建议启用
 
 # Algolia search
-algolia_search:
+doc_search:
   enable: true
-  hits:
-    per_page: 6
+  appId: C7D47YQ8XQ
+  apiKey: 685a1d932f606cd8be40f42c752e05b8
+  indexName: zsk
+  insights: true
+  container: '#docsearch'
+  debug: false
 
 
 comment:
