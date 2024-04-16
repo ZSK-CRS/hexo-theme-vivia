@@ -22,9 +22,10 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
   <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Regular.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Bold.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous">
+
 
   <% if (theme.math.katex.enable) { %>
     <script src="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.js"></script>

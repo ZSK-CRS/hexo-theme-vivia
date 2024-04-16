@@ -1,3 +1,5 @@
+
+
 <navbar id="navbar">
   <nav id="title-nav">
     <a href="<%- url_for("/") %>">
@@ -30,10 +32,24 @@
     </div>
     
     <!-- 添加搜索按钮 -->
-    <a id="nav-search-btn" class="nav-icon">
+    <!-- <a id="nav-search-btn" class="nav-icon">
       <%- partial('_icon/search') %>
-    </a>
+    </a> -->
 
+     
+  <div id="docsearch"></div>
+
+  <script type="text/javascript">
+    docsearch({
+      container: '#docsearch',
+      appId: 'C7D47YQ8XQ',
+      indexName: 'zsk',
+      apiKey: '685a1d932f606cd8be40f42c752e05b8',
+      debug: true 
+    });
+  </script>
+
+    
   </nav>
 </navbar>
 <div id="nav-dropdown" class="hidden">
@@ -46,11 +62,13 @@
     <% } %>  -->
 
     <!-- 添加搜索按钮 -->
-    <a id="nav-search-btn" class="nav-icon">
+    <!-- <a id="nav-search-btn" class="nav-icon">
       <%- partial('_icon/search') %>
-    </a>
+    </a> -->
+
     </div>
 </div>
+
 
 
 <script>
@@ -61,7 +79,7 @@
   }
 
   let searchBtn = document.getElementById("nav-search-btn");
-  searchBtn.onclick = function() {
-    alert("显示搜索框！");
-  }
+  // searchBtn.onclick = function() {
+  //   alert("显示搜索框！");
+  // }
 </script>
