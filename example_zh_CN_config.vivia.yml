@@ -62,7 +62,7 @@ comment:
     appKey: 
     placeholder: Just go go
     pageSize: 10
-    highlight: true
+    highlight: false
     serverURLs: 
     # 可在此添加其他 Valine 支持的配置项
     # 详见 https://valine.js.org/configuration.html
