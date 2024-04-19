@@ -22,7 +22,7 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+  <link rel="stylesheet" href="https://<%= theme.CDN %>/npm/@docsearch/css@3"/>
   <link rel="preconnect" href="https://C7D47YQ8XQ-dsn.algolia.net" crossorigin />
   <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Regular.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Bold.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous">

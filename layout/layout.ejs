@@ -22,7 +22,7 @@
 <script src="<%- url_for("/js/load-settings.js") %>" ></script>
 <%- partial('_partial/head') %>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  <script src="https://<%= theme.CDN %>/npm/@docsearch/js@3"></script>
   <% if (theme.previewMode) { %>
     <%- partial('_widget/color') %>
   <% } %>
@@ -45,8 +45,7 @@
     <%- partial('_partial/back-to-top') %>
   </div>
   <script src="<%- url_for("/js/light-dark-switch.js") %>"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+  <script type="text/javascript" src="https://<%= theme.CDN %>/npm/clipboard@2.0.4/dist/clipboard.js"></script>
   <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="/js/clipboard_use.js"></script>
   // <script src="<%- url_for("/js/clipboard_use.js") %>" ></script>
