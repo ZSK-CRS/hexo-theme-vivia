@@ -41,6 +41,8 @@
 menu:                      # Links in the navigation bar
   Home: /
   Archives: /archives
+  Script: /myscript
+  Tools: /tools
   About: /about
 rss: /atom.xml
 
