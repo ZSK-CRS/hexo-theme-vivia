@@ -21,7 +21,6 @@ $(".highlight").wrap("<div class='code-wrapper' style='position:relative'></div>
             }
         });
 
-        console.log("clipboard : "+clipboard);
         clipboard.on('success', function (e) {
             e.trigger.innerHTML = "<i class='fa fa-clipboard'></i><span>复制成功</span>"
             setTimeout(function () {

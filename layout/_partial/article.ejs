@@ -5,20 +5,28 @@
   <% if (is_post() || theme.home.style == 'detail') { %>
     <%- partial('post/gallery') %>
   <% } %> 
+
+  <div class="<%= post.showMeta ? 'special-true' : 'special-false' %>"></div>
+  
   <div class="article-inner">
     <div class="article-main">
       <header class="article-header">
         <%- partial('post/title', {class_name: 'p-name article-title'}) %>
-        <div class='meta-info-bar'>
-          <%- partial('post/date', {class_name: 'meta-info', date_format: null}) %>
-          <div class="need-seperator meta-info">
-            <%- partial('post/category') %>  
+      
+        <% if (post.showMeta){ %>
+          <div class='meta-info-bar'>
+            <%- partial('post/date', {class_name: 'meta-info', date_format: null}) %>
+            <div class="need-seperator meta-info">
+              <%- partial('post/category') %>  
+            </div>
+            <div class="wordcount need-seperator meta-info">
+              <%- symbolsCount(post) %> <%- __('words') %> 
+            </div>
           </div>
-          <div class="wordcount need-seperator meta-info">
-            <%- symbolsCount(post) %> <%- __('words') %> 
-          </div>
-        </div>
-        <%- partial('post/tag') %>
+          <%- partial('post/tag') %>
+  
+        <% } %>
+       
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         <% if (post.excerpt && index){ %>
