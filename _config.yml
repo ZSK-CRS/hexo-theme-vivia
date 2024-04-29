@@ -41,11 +41,11 @@
 menu:                      # Links in the navigation bar
   Home: /
   Archives: /archives
-  Script: /myscript
   Tools: /tools
+  Books: /books
   About: /about
 rss: /atom.xml
-
+  
 home:
   style: default           # default, detail
 
